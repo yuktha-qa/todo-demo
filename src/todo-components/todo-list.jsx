@@ -7,7 +7,9 @@ const TodoList = () => {
 
     console.log('TodoList list: ', list)
 
-    return <div>{list.length}</div>
+    return <div>
+        {list.map((text, index) => (<div key={index}>{text}</div>))}
+    </div>
 }
 
 export default TodoList;

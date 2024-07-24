@@ -5,7 +5,7 @@ import { DECREMENT, INCREMENT } from './redux/actions';
 
 function App() {
 
-  const counter  = useSelector(state => state.counter)
+  const counter  = useSelector(state => state.counter); //counter variable is teh actuall counter value in redux store
   const dispatch = useDispatch();
 
   return (

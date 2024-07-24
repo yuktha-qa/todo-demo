@@ -9,7 +9,7 @@ const TodoForm = () => {
 
     const submit = (e) => {
         e.preventDefault();
-        dispatch({type: 'ADD', value: itemText});
+        dispatch({type: 'ADD', value: itemText}); //dispatch({type: 'ADD', value: userentered})
         setItemText('')
     }
 
